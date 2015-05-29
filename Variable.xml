@@ -1,82 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!---->
 <Installer version="2.0">
-  <Variable Name="RegisteredUser" Value="Contoso Corporation" />
-  <Variable Name="RegisteredOrganization" Value="Contoso Corporation" />
-  <Variable Name="InstallerServiceAccount" Value="CONTOSO\Installer" />
-  <Variable Name="InstallerServiceAccountPassword" Value="P@ssw0rd" />
-  <Variable Name="SourcePath" Value="$SystemDrive\Installer" />
-  <Variable Name="Download" Value="C:\Installer" />
   <Variable Name="SystemCenter2012ProductKey" Value="" />
   <Variable Name="SQLServer2012ProductKey" Value="" />
   <Variable Name="DebugPS" Value="True" />
   <Components>
     <Component Name="System Center 2012 R2 Virtual Machine Manager">
-      <Variable Name="SystemCenter2012R2VirtualMachineManagerAdminGroup" Value="CONTOSO\VMM-Admins" />
-      <Variable Name="SystemCenter2012R2VirtualMachineManagerServerAdminGroup" Value="CONTOSO\VMM-LocalAdmins" />
-      <Variable Name="SystemCenter2012R2VirtualMachineManagerAGMembers" Value="CONTOSO\VMM-SVC;Contoso\SCOM-ACTION;Contoso\SCO-SVC;Contoso\SQL-SVC" />
+      <Variable Name="SystemCenter2012R2VirtualMachineManagerAdminGroup" Value="HOME-LAB\VMM-Admins" />
+      <Variable Name="SystemCenter2012R2VirtualMachineManagerServerAdminGroup" Value="HOME-LAB\VMM-LocalAdmins" />
+      <Variable Name="SystemCenter2012R2VirtualMachineManagerAGMembers" Value="HOME-LAB\VMM-SVC;HOME-LAB\SCOM-ACTION;HOME-LAB\SCO-SVC;HOME-LAB\SQL-SVC" />
       <Variable Name="SystemCenter2012R2VirtualMachineManagerBitsTcpPort" Value="443" />
-      <Variable Name="SystemCenter2012R2VirtualMachineManagerServiceAccount" Value="CONTOSO\VMM-SVC" />
+      <Variable Name="SystemCenter2012R2VirtualMachineManagerServiceAccount" Value="HOME-LAB\VMM-SVC" />
       <Variable Name="SystemCenter2012R2VirtualMachineManagerServiceAccountPassword" Value="P@ssw0rd" />
     </Component>
     <Component Name="System Center 2012 R2 Service Provider Foundation">
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationServerAdminGroup" Value="CONTOSO\SPF-LocalAdmins" />
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationAGMembers" Value="CONTOSO\SPF-SVC;Contoso\SCOM-ACTION" />
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCVMMServiceAccount" Value="CONTOSO\SPF-SVC" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationServerAdminGroup" Value="HOME-LAB\SPF-LocalAdmins" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationAGMembers" Value="HOME-LAB\SPF-SVC;HOME-LAB\SCOM-ACTION" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCVMMServiceAccount" Value="HOME-LAB\SPF-SVC" />
       <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCVMMServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationVMMSecurityGroupUsers" Value="CONTOSO\SPF-Admins" />
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCAdminServiceAccount" Value="CONTOSO\SPF-SVC" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationVMMSecurityGroupUsers" Value="HOME-LAB\SPF-Admins" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCAdminServiceAccount" Value="HOME-LAB\SPF-SVC" />
       <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCAdminServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationAdminSecurityGroupUsers" Value="CONTOSO\SPF-Admins" />
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCProviderServiceAccount" Value="CONTOSO\SPF-SVC" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationAdminSecurityGroupUsers" Value="HOME-LAB\SPF-Admins" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCProviderServiceAccount" Value="HOME-LAB\SPF-SVC" />
       <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCProviderServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationProviderSecurityGroupUsers" Value="CONTOSO\SPF-Admins" />
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCUsageServiceAccount" Value="CONTOSO\SPF-SVC" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationProviderSecurityGroupUsers" Value="HOME-LAB\SPF-Admins" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCUsageServiceAccount" Value="HOME-LAB\SPF-SVC" />
       <Variable Name="SystemCenter2012R2ServiceProviderFoundationSCUsageServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2ServiceProviderFoundationUsageSecurityGroupUsers" Value="CONTOSO\SPF-Admins" />
+      <Variable Name="SystemCenter2012R2ServiceProviderFoundationUsageSecurityGroupUsers" Value="HOME-LAB\SPF-Admins" />
     </Component>
     <Component Name="System Center 2012 R2 Orchestrator">
-      <Variable Name="SystemCenter2012R2OrchestratorAdminGroup" Value="CONTOSO\SCO-Admins" />
-      <Variable Name="SystemCenter2012R2OrchestratorServerAdminGroup" Value="CONTOSO\SCO-LocalAdmins" />
-      <Variable Name="SystemCenter2012R2OrchestratorAGMembers" Value="CONTOSO\SCO-SVC;Contoso\SCOM-ACTION" />
-      <Variable Name="SystemCenter2012R2OrchestratorServiceAccount" Value="CONTOSO\SCO-SVC" />
+      <Variable Name="SystemCenter2012R2OrchestratorAdminGroup" Value="HOME-LAB\SCO-Admins" />
+      <Variable Name="SystemCenter2012R2OrchestratorServerAdminGroup" Value="HOME-LAB\SCO-LocalAdmins" />
+      <Variable Name="SystemCenter2012R2OrchestratorAGMembers" Value="HOME-LAB\SCO-SVC;HOME-LAB\SCOM-ACTION" />
+      <Variable Name="SystemCenter2012R2OrchestratorServiceAccount" Value="HOME-LAB\SCO-SVC" />
       <Variable Name="SystemCenter2012R2OrchestratorServiceAccountPassword" Value="P@ssw0rd" />
     </Component>
     <Component Name="System Center 2012 R2 Operations Manager">
-      <Variable Name="SystemCenter2012R2OperationsManagerAdminGroup" Value="CONTOSO\SCOM-Admins" />
-      <Variable Name="SystemCenter2012R2OperationsManagerServerAdminGroup" Value="CONTOSO\SCOM-LocalAdmins" />
-      <Variable Name="SystemCenter2012R2OperationsManagerAGMembers" Value="CONTOSO\SCOM-SVC;Contoso\SCOM-ACTION;Contoso\VMM-SVC;Contoso\SCO-SVC;Contoso\SQL-SVC;Contoso\SQL-Admins" />
-      <Variable Name="SystemCenter2012R2OperationsManagerManagementGroupName" Value="SCOM_Contoso" />
-      <Variable Name="SystemCenter2012R2OperationsManagerActionServiceAccount" Value="CONTOSO\SCOM-ACTION" />
+      <Variable Name="SystemCenter2012R2OperationsManagerAdminGroup" Value="HOME-LAB\SCOM-Admins" />
+      <Variable Name="SystemCenter2012R2OperationsManagerServerAdminGroup" Value="HOME-LAB\SCOM-LocalAdmins" />
+      <Variable Name="SystemCenter2012R2OperationsManagerAGMembers" Value="HOME-LAB\SCOM-SVC;HOME-LAB\SCOM-ACTION;HOME-LAB\VMM-SVC;HOME-LAB\SCO-SVC;HOME-LAB\SQL-SVC;HOME-LAB\SQL-Admins" />
+      <Variable Name="SystemCenter2012R2OperationsManagerManagementGroupName" Value="SCOM_HOME-LAB" />
+      <Variable Name="SystemCenter2012R2OperationsManagerActionServiceAccount" Value="HOME-LAB\SCOM-ACTION" />
       <Variable Name="SystemCenter2012R2OperationsManagerActionServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2OperationsManagerDASServiceAccount" Value="CONTOSO\SCOM-SVC" />
+      <Variable Name="SystemCenter2012R2OperationsManagerDASServiceAccount" Value="HOME-LAB\SCOM-SVC" />
       <Variable Name="SystemCenter2012R2OperationsManagerDASServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2OperationsManagerDataReaderServiceAccount" Value="CONTOSO\SCOM-DR" />
+      <Variable Name="SystemCenter2012R2OperationsManagerDataReaderServiceAccount" Value="HOME-LAB\SCOM-DR" />
       <Variable Name="SystemCenter2012R2OperationsManagerDataReaderServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2OperationsManagerDataWriterServiceAccount" Value="CONTOSO\SCOM-DW" />
+      <Variable Name="SystemCenter2012R2OperationsManagerDataWriterServiceAccount" Value="HOME-LAB\SCOM-DW" />
       <Variable Name="SystemCenter2012R2OperationsManagerDataWriterServiceAccountPassword" Value="P@ssw0rd" />
     </Component>
     <Component Name="System Center 2012 R2 Service Manager">
-      <Variable Name="SystemCenter2012R2ServiceManagerAdminRoleGroup" Value="CONTOSO\SCSM-Admins" />
-      <Variable Name="SystemCenter2012R2ServiceManagerServerAdminGroup" Value="CONTOSO\SCSM-LocalAdmins" />
-      <Variable Name="SystemCenter2012R2ServiceManagerAGMembers" Value="CONTOSO\SCSM-SVC;Contoso\SCSM-WF;Contoso\SCO-SVC;Contoso\SQL-SVC;Contoso\SCOM-ACTION" />
-      <Variable Name="SystemCenter2012R2ServiceManagerServicesServiceAccount" Value="CONTOSO\SCSM-SVC" />
+      <Variable Name="SystemCenter2012R2ServiceManagerAdminRoleGroup" Value="HOME-LAB\SCSM-Admins" />
+      <Variable Name="SystemCenter2012R2ServiceManagerServerAdminGroup" Value="HOME-LAB\SCSM-LocalAdmins" />
+      <Variable Name="SystemCenter2012R2ServiceManagerAGMembers" Value="HOME-LAB\SCSM-SVC;HOME-LAB\SCSM-WF;HOME-LAB\SCO-SVC;HOME-LAB\SQL-SVC;HOME-LAB\SCOM-ACTION" />
+      <Variable Name="SystemCenter2012R2ServiceManagerServicesServiceAccount" Value="HOME-LAB\SCSM-SVC" />
       <Variable Name="SystemCenter2012R2ServiceManagerServicesServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2ServiceManagerWorkflowServiceAccount" Value="CONTOSO\SCSM-WF" />
+      <Variable Name="SystemCenter2012R2ServiceManagerWorkflowServiceAccount" Value="HOME-LAB\SCSM-WF" />
       <Variable Name="SystemCenter2012R2ServiceManagerWorkflowServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2ServiceManagerReportingServiceAccount" Value="CONTOSO\SCSM-SSRS" />
+      <Variable Name="SystemCenter2012R2ServiceManagerReportingServiceAccount" Value="HOME-LAB\SCSM-SSRS" />
       <Variable Name="SystemCenter2012R2ServiceManagerReportingServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2ServiceManagerAnalysisServiceAccount" Value="CONTOSO\SCSM-OLAP" />
+      <Variable Name="SystemCenter2012R2ServiceManagerAnalysisServiceAccount" Value="HOME-LAB\SCSM-OLAP" />
       <Variable Name="SystemCenter2012R2ServiceManagerAnalysisServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2ServiceManagerPortalServiceAccount" Value="CONTOSO\SCSM-Portal" />
+      <Variable Name="SystemCenter2012R2ServiceManagerPortalServiceAccount" Value="HOME-LAB\SCSM-Portal" />
       <Variable Name="SystemCenter2012R2ServiceManagerPortalServiceAccountPassword" Value="P@ssw0rd" />
-      <Variable Name="SystemCenter2012R2ServiceManagerManagementGroupName" Value="SM_Contoso" />
-      <Variable Name="SystemCenter2012R2ServiceManagerDatawarehouseManagementGroupName" Value="DW_Contoso" />
-      <Variable Name="SystemCenter2012R2ServiceManagerPortalUsers" Value="CONTOSO\Domain Users" />
+      <Variable Name="SystemCenter2012R2ServiceManagerManagementGroupName" Value="SM_HOME-LAB" />
+      <Variable Name="SystemCenter2012R2ServiceManagerDatawarehouseManagementGroupName" Value="DW_HOME-LAB" />
+      <Variable Name="SystemCenter2012R2ServiceManagerPortalUsers" Value="HOME-LAB\Domain Users" />
     </Component>
     <Component Name="System Center 2012 R2 Service Reporting">
-      <Variable Name="SystemCenter2012R2ServiceReportingServerAdminGroup" Value="CONTOSO\SR-LocalAdmins" />
-      <Variable Name="SystemCenter2012R2ServiceReportingAGMembers" Value="Contoso\SCOM-ACTION" />
+      <Variable Name="SystemCenter2012R2ServiceReportingServerAdminGroup" Value="HOME-LAB\SR-LocalAdmins" />
+      <Variable Name="SystemCenter2012R2ServiceReportingAGMembers" Value="HOME-LAB\SCOM-ACTION" />
       <Variable Name="SystemCenter2012R2ServiceReportingInstallFolder" Value="$SystemDrive\Program Files\Microsoft System Center 2012 R2\Service Reporting" />
       <Variable Name="SystemCenter2012R2ServiceReportingRepositoryDatabaseName" Value="UsageETLRepositoryDB" />
       <Variable Name="SystemCenter2012R2ServiceReportingStagingDatabaseName" Value="UsageStagingDB" />
@@ -84,146 +78,146 @@
       <Variable Name="SystemCenter2012R2ServiceReportingAnalysisDatabaseName" Value="UsageAnalysisDB" />
     </Component>
     <Component Name="System Center 2012 R2 Service Management Automation">
-      <Variable Name="SystemCenter2012R2ServiceManagementAutomationAdminGroup" Value="CONTOSO\SMA-Admins" />
-      <Variable Name="SystemCenter2012R2ServiceManagementAutomationServerAdminGroup" Value="CONTOSO\SMA-LocalAdmins" />
-      <Variable Name="SystemCenter2012R2ServiceManagementAutomationAGMembers" Value="CONTOSO\SMA-SVC;Contoso\SCOM-ACTION" />
-      <Variable Name="SystemCenter2012R2ServiceManagementAutomationServiceAccount" Value="CONTOSO\SMA-SVC" />
+      <Variable Name="SystemCenter2012R2ServiceManagementAutomationAdminGroup" Value="HOME-LAB\SMA-Admins" />
+      <Variable Name="SystemCenter2012R2ServiceManagementAutomationServerAdminGroup" Value="HOME-LAB\SMA-LocalAdmins" />
+      <Variable Name="SystemCenter2012R2ServiceManagementAutomationAGMembers" Value="HOME-LAB\SMA-SVC;HOME-LAB\SCOM-ACTION" />
+      <Variable Name="SystemCenter2012R2ServiceManagementAutomationServiceAccount" Value="HOME-LAB\SMA-SVC" />
       <Variable Name="SystemCenter2012R2ServiceManagementAutomationServiceAccountPassword" Value="P@ssw0rd" />
     </Component>
     <Component Name="Windows Azure Pack 2013">
-      <Variable Name="WindowsAzurePack2013AdminGroup" Value="CONTOSO\WAP-Admins" />
-      <Variable Name="WindowsAzurePack2013ServerAdminGroup" Value="CONTOSO\WAP-LocalAdmins" />
-      <Variable Name="WindowsAzurePack2013AGMembers" Value="Contoso\SCOM-ACTION" />
+      <Variable Name="WindowsAzurePack2013AdminGroup" Value="HOME-LAB\WAP-Admins" />
+      <Variable Name="WindowsAzurePack2013ServerAdminGroup" Value="HOME-LAB\WAP-LocalAdmins" />
+      <Variable Name="WindowsAzurePack2013AGMembers" Value="HOME-LAB\SCOM-ACTION" />
       <Variable Name="WindowsAzurePack2013ConfigStorePassphrase" Value="P@ssw0rd" />
     </Component>
     <Component Name="Windows Azure Pack 2013 Web Sites">
-      <Variable Name="WindowsAzurePack2013WebSitesServerAdminGroup" Value="Contoso\WAPWEB-LocalAdmins" />
-      <Variable Name="WindowsAzurePack2013WebSitesAGMembers" Value="Contoso\WAPWEB-SVC;Contoso\SCOM-ACTION;Contoso\SQL-SVC;Contoso\WAPWEB-FSO-SVC;Contoso\WAPWEB-FSU-SVC;Contoso\WAPWEB-CSU-SVC;Contoso\WAPWEB-PB-SVC;Contoso\WAPWEB-MN-SVC;Contoso\WAPWEB-FE-SVC;Contoso\WAPWEB-WW-SVC" />
+      <Variable Name="WindowsAzurePack2013WebSitesServerAdminGroup" Value="HOME-LAB\WAPWEB-LocalAdmins" />
+      <Variable Name="WindowsAzurePack2013WebSitesAGMembers" Value="HOME-LAB\WAPWEB-SVC;HOME-LAB\SCOM-ACTION;HOME-LAB\SQL-SVC;HOME-LAB\WAPWEB-FSO-SVC;HOME-LAB\WAPWEB-FSU-SVC;HOME-LAB\WAPWEB-CSU-SVC;HOME-LAB\WAPWEB-PB-SVC;HOME-LAB\WAPWEB-MN-SVC;HOME-LAB\WAPWEB-FE-SVC;HOME-LAB\WAPWEB-WW-SVC" />
       <Variable Name="WindowsAzurePack2013WebSitesOfflineFeed" Value="True" />
       <Variable Name="WindowsAzurePack2013WebSitesCloudAdmin" Value="CloudAdmin" />
       <Variable Name="WindowsAzurePack2013WebSitesCloudAdminPassword" Value="Pass@word1" />
-      <Variable Name="WindowsAzurePack2013WebSitesDNSSuffix" Value="websites.Contoso.com" />
-      <Variable Name="WindowsAzurePack2013WebSitesFileServerAdminServiceAccount" Value="Contoso\WAPWEB-SVC" />
+      <Variable Name="WindowsAzurePack2013WebSitesDNSSuffix" Value="websites.HOME-LAB.local" />
+      <Variable Name="WindowsAzurePack2013WebSitesFileServerAdminServiceAccount" Value="HOME-LAB\WAPWEB-SVC" />
       <Variable Name="WindowsAzurePack2013WebSitesFileServerAdminServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="WindowsAzurePack2013WebSitesFileShareOwnerServiceAccount" Value="Contoso\WAPWEB-FSO-SVC" />
+      <Variable Name="WindowsAzurePack2013WebSitesFileShareOwnerServiceAccount" Value="HOME-LAB\WAPWEB-FSO-SVC" />
       <Variable Name="WindowsAzurePack2013WebSitesFileShareOwnerServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="WindowsAzurePack2013WebSitesFileShareUserServiceAccount" Value="Contoso\WAPWEB-FSU-SVC" />
+      <Variable Name="WindowsAzurePack2013WebSitesFileShareUserServiceAccount" Value="HOME-LAB\WAPWEB-FSU-SVC" />
       <Variable Name="WindowsAzurePack2013WebSitesFileShareUserServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="WindowsAzurePack2013WebSitesCertificateShareUserServiceAccount" Value="Contoso\WAPWEB-CSU-SVC" />
+      <Variable Name="WindowsAzurePack2013WebSitesCertificateShareUserServiceAccount" Value="HOME-LAB\WAPWEB-CSU-SVC" />
       <Variable Name="WindowsAzurePack2013WebSitesCertificateShareUserServiceAccountPassword" Value="Pass@word1" />
       <Variable Name="WindowsAzurePack2013WebSitesContentShareName" Value="WebSites" />
       <Variable Name="WindowsAzurePack2013WebSitesContentSharePath" Value="$SystemDrive\WebSites" />
       <Variable Name="WindowsAzurePack2013WebSitesCertificateShareName" Value="Certificates" />
       <Variable Name="WindowsAzurePack2013WebSitesCertificateSharePath" Value="$SystemDrive\Certificates" />
-      <Variable Name="WindowsAzurePack2013WebSitesManagementServerAdminServiceAccount" Value="Contoso\WAPWEB-MN-SVC" />
+      <Variable Name="WindowsAzurePack2013WebSitesManagementServerAdminServiceAccount" Value="HOME-LAB\WAPWEB-MN-SVC" />
       <Variable Name="WindowsAzurePack2013WebSitesManagementServerAdminServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="WindowsAzurePack2013WebSitesPublisherAdminServiceAccount" Value="Contoso\WAPWEB-PB-SVC" />
+      <Variable Name="WindowsAzurePack2013WebSitesPublisherAdminServiceAccount" Value="HOME-LAB\WAPWEB-PB-SVC" />
       <Variable Name="WindowsAzurePack2013WebSitesPublisherAdminServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="WindowsAzurePack2013WebSitesFrontEndAdminServiceAccount" Value="Contoso\WAPWEB-FE-SVC" />
+      <Variable Name="WindowsAzurePack2013WebSitesFrontEndAdminServiceAccount" Value="HOME-LAB\WAPWEB-FE-SVC" />
       <Variable Name="WindowsAzurePack2013WebSitesFrontEndAdminServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="WindowsAzurePack2013WebSitesWorkerAdminServiceAccount" Value="Contoso\WAPWEB-WW-SVC" />
+      <Variable Name="WindowsAzurePack2013WebSitesWorkerAdminServiceAccount" Value="HOME-LAB\WAPWEB-WW-SVC" />
       <Variable Name="WindowsAzurePack2013WebSitesWorkerAdminServiceAccountPassword" Value="Pass@word1" />
     </Component>
     <Component Name="SQL Server 2012">
-      <Variable Name="SQLServer2012ServerAdminGroup" Value="Contoso\SQL-LocalAdmins" />
-      <Variable Name="SQLServer2012AGMembers" Value="Contoso\SQL-SVC;Contoso\SCOM-ACTION;Contoso\SCSM-SVC;Contoso\SCSM-WF;Contoso\VMM-SVC;Contoso\SCSM-OLAP;Contoso\SCSM-SSRS;Contoso\VMM01A$;Contoso\VMM01B$" />
+      <Variable Name="SQLServer2012ServerAdminGroup" Value="HOME-LAB\SQL-LocalAdmins" />
+      <Variable Name="SQLServer2012AGMembers" Value="HOME-LAB\SQL-SVC;HOME-LAB\SCOM-ACTION;HOME-LAB\SCSM-SVC;HOME-LAB\SCSM-WF;HOME-LAB\VMM-SVC;HOME-LAB\SCSM-OLAP;HOME-LAB\SCSM-SSRS;HOME-LAB\VMM01A$;HOME-LAB\VMM01B$" />
     </Component>
     <Component Name="Windows Azure Pack 2013 SQL Cloud">
-      <Variable Name="WindowsAzurePack2013SQLCloudServerAdminGroup" Value="Contoso\SQLCloud-LocalAdmins" />
-      <Variable Name="WindowsAzurePack2013SQLCloudAGMembers" Value="Contoso\SQL-SVC;Contoso\SCOM-ACTION" />
+      <Variable Name="WindowsAzurePack2013SQLCloudServerAdminGroup" Value="HOME-LAB\SQLCloud-LocalAdmins" />
+      <Variable Name="WindowsAzurePack2013SQLCloudAGMembers" Value="HOME-LAB\SQL-SVC;HOME-LAB\SCOM-ACTION" />
       <Variable Name="WindowsAzurePack2013SQLCloudTotalSpaceMB" Value="10000" />
     </Component>
   </Components>
   <Roles>
-    <Role Name="Windows Azure Pack 2013 Database Server" Server="DB01.CONTOSO.com" Instance="MSSQLSERVER" />
-    <Role Name="Windows Azure Pack 2013 Admin API Server" Server="WAPADMIN.CONTOSO.com" />
-    <Role Name="Windows Azure Pack 2013 Admin Authentication Site Server" Server="WAPADMIN.CONTOSO.com" />
-    <Role Name="Windows Azure Pack 2013 Admin Site Server" Server="WAPADMIN.CONTOSO.com" />
-    <Role Name="Windows Azure Pack 2013 SQL Server Extension Server" Server="WAPADMIN.CONTOSO.com" />
-    <Role Name="Windows Azure Pack 2013 MySQL Extension Server" Server="WAPADMIN.CONTOSO.com" />
-    <Role Name="Windows Azure Pack 2013 Tenant API Server" Server="WAPADMIN.CONTOSO.com" />
-    <Role Name="Windows Azure Pack 2013 Tenant Public API Server" Server="WAPTENANT.CONTOSO.com" />
-    <Role Name="Windows Azure Pack 2013 Tenant Authentication Site Server" Server="WAPTENANT.CONTOSO.com" />
-    <Role Name="Windows Azure Pack 2013 Tenant Site Server" Server="WAPTENANT.CONTOSO.com" />
-    <Role Name="Windows Azure Pack 2013 Web Sites Database Server" Server="WAPWEBDB01.Contoso.com" Instance="MSSQLSERVER" />
-    <Role Name="Windows Azure Pack 2013 Web Sites Controller Server" Server="WAPWEBCN01.Contoso.com" />
-    <Role Name="Windows Azure Pack 2013 Web Sites Management Server" Server="WAPWEBMN01.Contoso.com" />
-    <Role Name="Windows Azure Pack 2013 Web Sites FrontEnd Server" Server="WAPWEBFE01.Contoso.com" />
-    <Role Name="Windows Azure Pack 2013 Web Sites Publisher Server" Server="WAPWEBPB01.Contoso.com" />
-    <Role Name="Windows Azure Pack 2013 Web Sites Reserved Medium Worker Server" Server="WAPWEBWWR01.Contoso.com" />
-    <Role Name="Windows Azure Pack 2013 Web Sites Shared Worker Server" Server="WAPWEBWWS01.Contoso.com" />
-    <Role Name="Windows Azure Pack 2013 Web Sites File Server" Server="WAPWEBFS01.Contoso.com" />
-    <Role Name="System Center 2012 R2 Virtual Machine Manager Database Server" Server="DB02.CONTOSO.com" Instance="SCVMMDB" />
-    <Role Name="System Center 2012 R2 Virtual Machine Manager Management Server" Server="VMM01.CONTOSO.com" />
-    <Role Name="System Center 2012 R2 Virtual Machine Manager Console" Server="RD01.contoso.com" />
-    <Role Name="System Center 2012 R2 Service Provider Foundation Database Server" Server="DB02.CONTOSO.com" Instance="SCDB" />
-    <Role Name="System Center 2012 R2 Service Provider Foundation Server" Server="SPF01.CONTOSO.com" />
-    <Role Name="System Center 2012 R2 Service Management Automation Database Server" Server="DB02.CONTOSO.com" Instance="SCDB" />
-    <Role Name="System Center 2012 R2 Service Management Automation Web Service Server" Server="SMA01.CONTOSO.com" />
-    <Role Name="System Center 2012 R2 Service Management Automation Runbook Worker Server" Server="SMARW01.contoso.com" />
-    <Role Name="System Center 2012 R2 Orchestrator Database Server" Server="DB02.contoso.com" Instance="SCDB" />
-    <Role Name="System Center 2012 R2 Orchestrator Management Server" Server="OR01.contoso.com" />
-    <Role Name="System Center 2012 R2 Orchestrator Primary Runbook Server" Server="OR01.contoso.com" />
-    <Role Name="System Center 2012 R2 Orchestrator Web Components Server" Server="OR01.contoso.com" />
-    <Role Name="System Center 2012 R2 Orchestrator Runbook Designer" Server="OR01.contoso.com" />
-    <Role Name="System Center 2012 R2 Operations Manager Database Server" Server="DB01.CONTOSO.com" Instance="SCOMDB" />
-    <Role Name="System Center 2012 R2 Operations Manager Datawarehouse Server" Server="DB03.contoso.com" Instance="SCOMDW" />
-    <Role Name="System Center 2012 R2 Operations Manager Reporting Server" Server="OMRP01.contoso.com" Instance="MSSQLSERVER" />
-    <Role Name="System Center 2012 R2 Operations Manager Management Server" Server="OM01.contoso.com" />
-    <Role Name="System Center 2012 R2 Operations Manager Web Console Server" Server="OM01.contoso.com" />
-    <Role Name="System Center 2012 R2 Operations Manager Console" Server="OM01.contoso.com" />
-    <Role Name="System Center 2012 R2 Operations Manager Console" Server="RD01.contoso.com" />
-    <Role Name="SQL Server 2012 Management Tools" Server="OMRP01.Contoso.com" />
-    <Role Name="System Center 2012 R2 Service Manager Database Server" Server="DB01.contoso.com" Instance="SCSMDB" />
-    <Role Name="System Center 2012 R2 Service Manager Datawarehouse Server" Server="DB02.contoso.com" Instance="SCSMDW" />
-    <Role Name="System Center 2012 R2 Service Manager Analysis Server" Server="DB04.contoso.com" Instance="SCSMAS" />
-    <Role Name="System Center 2012 R2 Service Manager Reporting Server" Server="SM02.contoso.com" Instance="MSSQLSERVER" />
-    <Role Name="System Center 2012 R2 Service Manager Management Server" Server="SM01.contoso.com" />
-    <Role Name="System Center 2012 R2 Service Manager Web Content Server" Server="SM01.contoso.com" />
-    <Role Name="System Center 2012 R2 Service Manager Datawarehouse Management Server" Server="SM02.contoso.com" />
-    <Role Name="System Center 2012 R2 Service Manager SharePoint Web Parts Server" Server="SM03.contoso.com" />
-    <Role Name="System Center 2012 R2 Service Manager Console" Server="RD01.contoso.com" />
-    <Role Name="System Center 2012 R2 Service Reporting Datawarehouse Server" Server="SR01.contoso.com" Instance="MSSQLSERVER" />
-    <Role Name="System Center 2012 R2 Service Reporting Analysis Server" Server="SR01.contoso.com" Instance="MSSQLSERVER" />
-    <Role Name="System Center 2012 R2 Service Reporting Server" Server="SR01.contoso.com" />
-    <Role Name="SQL Server 2012 Management Tools" Server="SR01.contoso.com" />
-    <Role Name="Windows Azure Pack 2013 SQL Cloud Database Server" Server="SQLCLOUD.contoso.com" Instance="MSSQLSERVER" />
-    <Role Name="SQL Server 2012 Management Tools" Server="SQLCLOUD.contoso.com" />
-    <Role Name="SQL Server 2012 Management Tools" Server="WAPWEBDB01.Contoso.com" />
-    <Role Name="SQL Server 2012 Management Tools" Server="RD01.contoso.com" />
-    <Role Name="SQL Server 2012 Management Tools" Server="DB01.contoso.com" />
-    <Role Name="SQL Server 2012 Management Tools" Server="DB02.contoso.com" />
-    <Role Name="SQL Server 2012 Management Tools" Server="DB03.contoso.com" />
-    <Role Name="SQL Server 2012 Management Tools" Server="DB04.contoso.com" />
+    <Role Name="Windows Azure Pack 2013 Database Server" Server="DB01.HOME-LAB.local" Instance="MSSQLSERVER" />
+    <Role Name="Windows Azure Pack 2013 Admin API Server" Server="WAPADMIN.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Admin Authentication Site Server" Server="WAPADMIN.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Admin Site Server" Server="WAPADMIN.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 SQL Server Extension Server" Server="WAPADMIN.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 MySQL Extension Server" Server="WAPADMIN.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Tenant API Server" Server="WAPADMIN.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Tenant Public API Server" Server="WAPTENANT.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Tenant Authentication Site Server" Server="WAPTENANT.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Tenant Site Server" Server="WAPTENANT.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Web Sites Database Server" Server="WAPWEBDB01.HOME-LAB.local" Instance="MSSQLSERVER" />
+    <Role Name="Windows Azure Pack 2013 Web Sites Controller Server" Server="WAPWEBCN01.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Web Sites Management Server" Server="WAPWEBMN01.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Web Sites FrontEnd Server" Server="WAPWEBFE01.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Web Sites Publisher Server" Server="WAPWEBPB01.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Web Sites Reserved Medium Worker Server" Server="WAPWEBWWR01.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Web Sites Shared Worker Server" Server="WAPWEBWWS01.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 Web Sites File Server" Server="WAPWEBFS01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Virtual Machine Manager Database Server" Server="DB02.HOME-LAB.local" Instance="SCVMMDB" />
+    <Role Name="System Center 2012 R2 Virtual Machine Manager Management Server" Server="VMM01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Virtual Machine Manager Console" Server="RD01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Service Provider Foundation Database Server" Server="DB02.HOME-LAB.local" Instance="SCDB" />
+    <Role Name="System Center 2012 R2 Service Provider Foundation Server" Server="SPF01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Service Management Automation Database Server" Server="DB02.HOME-LAB.local" Instance="SCDB" />
+    <Role Name="System Center 2012 R2 Service Management Automation Web Service Server" Server="SMA01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Service Management Automation Runbook Worker Server" Server="SMARW01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Orchestrator Database Server" Server="DB02.HOME-LAB.local" Instance="SCDB" />
+    <Role Name="System Center 2012 R2 Orchestrator Management Server" Server="OR01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Orchestrator Primary Runbook Server" Server="OR01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Orchestrator Web Components Server" Server="OR01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Orchestrator Runbook Designer" Server="OR01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Operations Manager Database Server" Server="DB01.HOME-LAB.local" Instance="SCOMDB" />
+    <Role Name="System Center 2012 R2 Operations Manager Datawarehouse Server" Server="DB03.HOME-LAB.local" Instance="SCOMDW" />
+    <Role Name="System Center 2012 R2 Operations Manager Reporting Server" Server="OMRP01.HOME-LAB.local" Instance="MSSQLSERVER" />
+    <Role Name="System Center 2012 R2 Operations Manager Management Server" Server="OM01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Operations Manager Web Console Server" Server="OM01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Operations Manager Console" Server="OM01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Operations Manager Console" Server="RD01.HOME-LAB.local" />
+    <Role Name="SQL Server 2012 Management Tools" Server="OMRP01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Service Manager Database Server" Server="DB01.HOME-LAB.local" Instance="SCSMDB" />
+    <Role Name="System Center 2012 R2 Service Manager Datawarehouse Server" Server="DB02.HOME-LAB.local" Instance="SCSMDW" />
+    <Role Name="System Center 2012 R2 Service Manager Analysis Server" Server="DB04.HOME-LAB.local" Instance="SCSMAS" />
+    <Role Name="System Center 2012 R2 Service Manager Reporting Server" Server="SM02.HOME-LAB.local" Instance="MSSQLSERVER" />
+    <Role Name="System Center 2012 R2 Service Manager Management Server" Server="SM01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Service Manager Web Content Server" Server="SM01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Service Manager Datawarehouse Management Server" Server="SM02.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Service Manager SharePoint Web Parts Server" Server="SM03.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Service Manager Console" Server="RD01.HOME-LAB.local" />
+    <Role Name="System Center 2012 R2 Service Reporting Datawarehouse Server" Server="SR01.HOME-LAB.local" Instance="MSSQLSERVER" />
+    <Role Name="System Center 2012 R2 Service Reporting Analysis Server" Server="SR01.HOME-LAB.local" Instance="MSSQLSERVER" />
+    <Role Name="System Center 2012 R2 Service Reporting Server" Server="SR01.HOME-LAB.local" />
+    <Role Name="SQL Server 2012 Management Tools" Server="SR01.HOME-LAB.local" />
+    <Role Name="Windows Azure Pack 2013 SQL Cloud Database Server" Server="SQLCLOUD.HOME-LAB.local" Instance="MSSQLSERVER" />
+    <Role Name="SQL Server 2012 Management Tools" Server="SQLCLOUD.HOME-LAB.local" />
+    <Role Name="SQL Server 2012 Management Tools" Server="WAPWEBDB01.HOME-LAB.local" />
+    <Role Name="SQL Server 2012 Management Tools" Server="RD01.HOME-LAB.local" />
+    <Role Name="SQL Server 2012 Management Tools" Server="DB01.HOME-LAB.local" />
+    <Role Name="SQL Server 2012 Management Tools" Server="DB02.HOME-LAB.local" />
+    <Role Name="SQL Server 2012 Management Tools" Server="DB03.HOME-LAB.local" />
+    <Role Name="SQL Server 2012 Management Tools" Server="DB04.HOME-LAB.local" />
   </Roles>
   <SQL>
-    <Instance Server="DB01.contoso.com" Instance="MSSQLSERVER" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
+    <Instance Server="DB01.HOME-LAB.local" Instance="MSSQLSERVER" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
       <Variable Name="SQLSAPassword" Value="P@ssw0rd" />
     </Instance>
-    <Instance Server="DB02.contoso.com" Instance="SCVMMDB" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
+    <Instance Server="DB02.HOME-LAB.local" Instance="SCVMMDB" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
     </Instance>
-    <Instance Server="DB03.contoso.com" Instance="SCOMDW" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL Admins" />
+    <Instance Server="DB03.HOME-LAB.local" Instance="SCOMDW" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL Admins" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
@@ -233,66 +227,66 @@
       <Variable Name="SQLASLogDir" Value="H:\Program Files\Microsoft SQL Server\MSAS11.$Instance\OLAP\Log" />
       <Variable Name="SQLASBackupDir" Value="G:\Program Files\Microsoft SQL Server\MSAS11.$Instance\OLAP\Backup" />
       <Variable Name="SQLASTempDir" Value="I:\Program Files\Microsoft SQL Server\MSAS11.$Instance\OLAP\Temp" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLASServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLASServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLASServiceAccountPassword" Value="Pass@word1" />
     </Instance>
-    <Instance Server="DB02.contoso.com" Instance="SCDB" Version="SQL Server 2012" Port="50001">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
+    <Instance Server="DB02.HOME-LAB.local" Instance="SCDB" Version="SQL Server 2012" Port="50001">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
     </Instance>
-    <Instance Server="DB01.contoso.com" Instance="SCOMDB" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
+    <Instance Server="DB01.HOME-LAB.local" Instance="SCOMDB" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
-      <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLSAPassword" Value="P@ssw0rd" />
-    </Instance>
-    <Instance Server="DB01.contoso.com" Instance="SCSMDB" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
-      <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
-      <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
-      <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
       <Variable Name="SQLSAPassword" Value="P@ssw0rd" />
     </Instance>
-    <Instance Server="DB02.contoso.com" Instance="SCSMDW" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
+    <Instance Server="DB01.HOME-LAB.local" Instance="SCSMDB" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
+      <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
+      <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
+      <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
+      <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
+      <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
+      <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
+      <Variable Name="SQLSAPassword" Value="P@ssw0rd" />
+    </Instance>
+    <Instance Server="DB02.HOME-LAB.local" Instance="SCSMDW" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
       <Variable Name="SQLSAPassword" Value="P@ssw0rd" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
     </Instance>
-    <Instance Server="DB04.contoso.com" Instance="SCSMAS" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL Admins" />
+    <Instance Server="DB04.HOME-LAB.local" Instance="SCSMAS" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL Admins" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
@@ -302,72 +296,72 @@
       <Variable Name="SQLASLogDir" Value="H:\Program Files\Microsoft SQL Server\MSAS11.$Instance\OLAP\Log" />
       <Variable Name="SQLASBackupDir" Value="G:\Program Files\Microsoft SQL Server\MSAS11.$Instance\OLAP\Backup" />
       <Variable Name="SQLASTempDir" Value="I:\Program Files\Microsoft SQL Server\MSAS11.$Instance\OLAP\Temp" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLASServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLASServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLASServiceAccountPassword" Value="Pass@word1" />
     </Instance>
-    <Instance Server="OMRP01.CONTOSO.com" Instance="MSSQLSERVER" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+    <Instance Server="OMRP01.HOME-LAB.local" Instance="MSSQLSERVER" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
     </Instance>
-    <Instance Server="WAPWEBDB01.Contoso.com" Instance="MSSQLSERVER" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="Contoso\SQL-Admins" />
+    <Instance Server="WAPWEBDB01.HOME-LAB.local" Instance="MSSQLSERVER" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLAgtServiceAccount" Value="Contoso\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="Contoso\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
     </Instance>
-    <Instance Server="SQLCLOUD.CONTOSO.com" Instance="MSSQLSERVER" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
+    <Instance Server="SQLCLOUD.HOME-LAB.local" Instance="MSSQLSERVER" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
       <Variable Name="SQLSAPassword" Value="P@ssw0rd" />
     </Instance>
-    <Instance Server="SM02.CONTOSO.com" Instance="MSSQLSERVER" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+    <Instance Server="SM02.HOME-LAB.local" Instance="MSSQLSERVER" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
       <Variable Name="SQLSAPassword" Value="P@ssw0rd" />
     </Instance>
-    <Instance Server="SR01.CONTOSO.com" Instance="MSSQLSERVER" Version="SQL Server 2012">
-      <Variable Name="SQLAdmins" Value="CONTOSO\SQL-Admins" />
+    <Instance Server="SR01.HOME-LAB.local" Instance="MSSQLSERVER" Version="SQL Server 2012">
+      <Variable Name="SQLAdmins" Value="HOME-LAB\SQL-Admins" />
       <Variable Name="SQLInstallSQLDataDir" Value="D:\Program Files\Microsoft SQL Server" />
       <Variable Name="SQLUserDBDir" Value="D:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLUserDBLogDir" Value="E:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
       <Variable Name="SQLTempDBLogDir" Value="F:\Program Files\Microsoft SQL Server\MSSQL11.$Instance\MSSQL\Data" />
-      <Variable Name="SQLAgtServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLAgtServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLAgtServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLServiceAccountPassword" Value="Pass@word1" />
-      <Variable Name="SQLASServiceAccount" Value="CONTOSO\SQL-SVC" />
+      <Variable Name="SQLASServiceAccount" Value="HOME-LAB\SQL-SVC" />
       <Variable Name="SQLASServiceAccountPassword" Value="Pass@word1" />
     </Instance>
   </SQL>
   <VMs>
     <Count>28</Count>
     <Domain>
-      <Name>CONTOSO.com</Name>
+      <Name>HOME-LAB.local</Name>
       <ServiceAccountOU>Services.HQ</ServiceAccountOU>
       <GroupOU>Groups.HQ</GroupOU>
       <Existing>False</Existing>
@@ -378,7 +372,7 @@
       <VHDFolder>D:\PDTVMs</VHDFolder>
       <SharedVHDXFolder>D:\SHAREDVHDX</SharedVHDXFolder>
       <VMName>
-        <Prefix>WS12R2D</Prefix>
+        <Prefix>HOME-LAB</Prefix>
         <Sequence>1</Sequence>
       </VMName>
       <Processor>2</Processor>
@@ -401,7 +395,7 @@
       </NetworkAdapter>
       <OSDisk>
         <Parent>C:\VHDs\Win2012r2RTM.vhdx</Parent>
-        <Type>Differencing</Type>
+        <Type>Dynamic</Type>
       </OSDisk>
       <DVD>False</DVD>
       <AutoStart>
@@ -410,10 +404,10 @@
       </AutoStart>
       <Autostop>TurnOff</Autostop>
       <JoinDomain>
-        <Domain>contoso.com</Domain>
-        <PrimaryDC>DC01.contoso.com</PrimaryDC>
+        <Domain>HOME-LAB.local</Domain>
+        <PrimaryDC>DC01.HOME-LAB.local</PrimaryDC>
         <Credentials>
-          <Domain>contoso.com</Domain>
+          <Domain>HOME-LAB.local</Domain>
           <Password>P@ssw0rd</Password>
           <Username>Administrator</Username>
         </Credentials>
@@ -636,4 +630,10 @@
       </DataDisks>
     </VM>
   </VMs>
+  <Variable Name="InstallerServiceAccount" Value="HOME-LAB\Installer" />
+  <Variable Name="InstallerServiceAccountPassword" Value="P@ssw0rd" />
+  <Variable Name="SourcePath" Value="D:\Installer" />
+  <Variable Name="Download" Value="D:\Installer" />
+  <Variable Name="RegisteredUser" Value="Peter Lemmen" />
+  <Variable Name="RegisteredOrganization" Value="Atos" />
 </Installer>
