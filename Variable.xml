@@ -368,9 +368,9 @@
     </Domain>
     <Default>
       <Host>Localhost</Host>
-      <VMFolder>D:\PDTVMs</VMFolder>
-      <VHDFolder>D:\PDTVMs</VHDFolder>
-      <SharedVHDXFolder>D:\SHAREDVHDX</SharedVHDXFolder>
+      <VMFolder>E:\PDTVMs</VMFolder>
+      <VHDFolder>E:\PDTVMs</VHDFolder>
+      <SharedVHDXFolder>E:\SHAREDVHDX</SharedVHDXFolder>
       <VMName>
         <Prefix>HOME-LAB</Prefix>
         <Sequence>1</Sequence>
