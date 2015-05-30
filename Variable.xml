@@ -383,7 +383,7 @@
         <Buffer>20</Buffer>
       </Memory>
       <NetworkAdapter>
-        <VirtualSwitch>CorpNet1</VirtualSwitch>
+        <VirtualSwitch>FM-Switch</VirtualSwitch>
         <VirtualSwitchType>INTERNAL</VirtualSwitchType>
         <IP>
           <Prefix>192.168.1.</Prefix>
