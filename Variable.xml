@@ -394,7 +394,7 @@
         </IP>
       </NetworkAdapter>
       <OSDisk>
-        <Parent>C:\VHDs\Win2012r2RTM.vhdx</Parent>
+        <Parent>D:\Installer\BaseVHDXs\WIN2012R2EVAL.vhdx</Parent>
         <Type>Dynamic</Type>
       </OSDisk>
       <DVD>False</DVD>
@@ -594,10 +594,10 @@
       <VMName>SM03</VMName>
       <VMGeneration>1</VMGeneration>
       <NetworkAdapter>
-        <Identifier>Local Area Connection</Identifier>
+        <Identifier>LAN</Identifier>
       </NetworkAdapter>
       <OSDisk>
-        <Parent>C:\VHDs\Win2008R2.vhdx</Parent>
+        <Parent>D:\Installer\BaseVHDXs\WIN2012EVAL.vhdx</Parent>
         <Type>Differencing</Type>
       </OSDisk>
     </VM>
