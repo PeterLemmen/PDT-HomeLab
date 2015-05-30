@@ -598,7 +598,7 @@
       </NetworkAdapter>
       <OSDisk>
         <Parent>D:\Installer\BaseVHDXs\WIN2012EVAL.vhdx</Parent>
-        <Type>Differencing</Type>
+        <Type>Copy</Type>
       </OSDisk>
     </VM>
     <VM Count="27">
