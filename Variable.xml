@@ -395,7 +395,7 @@
       </NetworkAdapter>
       <OSDisk>
         <Parent>D:\Installer\BaseVHDXs\WIN2012R2EVAL.vhdx</Parent>
-        <Type>Dynamic</Type>
+        <Type>Copy</Type>
       </OSDisk>
       <DVD>False</DVD>
       <AutoStart>
