@@ -394,7 +394,7 @@
         </IP>
       </NetworkAdapter>
       <OSDisk>
-        <Parent>D:\Installer\BaseVHDXs\WIN2012R2EVAL.vhdx</Parent>
+        <Parent>D:\Installer\BaseVHDXs\W2012R2-BASE.vhdx</Parent>
         <Type>Copy</Type>
       </OSDisk>
       <DVD>False</DVD>
